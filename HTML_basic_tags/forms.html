@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Forms Example</h2>
+    <!-- backhand.php is an end point where the forms should be sumitted -->
+    <form action="backend.php"></form>
+    <!-- <br> is not recomended -->
+    <label for="name">Name</label>
+    <div><input type="text" name="myName" id="name"></div><br>
+    <label for="role">Role</label><br>
+    <div><input type="text" name="myRole" id="role"></div><br>
+    <label for="email">Email</label><br>
+    <div><input type="email" name="myEmail" id="email"></div><br>
+    <label for="date">Date</label><br>
+    <div><input type="date" name="myDate" id="date"></div><br>
+    <label for="number">Number</label><br>
+    <div><input type="number" name="myNumber" id="number"></div><br>
+    <!-- use checked at the last to make default check the box -->
+    <label for="checkbox">Are you eligible?</label><br>
+    <div><input type="checkbox" name="myCheckbox" id="checkbox"></div><br>
+    <!-- radio button -->
+    <!-- we can only check one box bcz we have given the same name for all three genders as myGender -->
+
+    <div>Gender:<br><label for="radio">Male</label><input type="radio" name="myGender" id="radio">
+        <label for="radio">Female</label><input type="radio" name="myGender" id="radio"> <label
+            for="radio">Others</label><input type="radio" name="myGender" id="radio">
+    </div><br>
+    <div>Write About Yourself: <br><textarea name="myText" cols="30" rows="10"></textarea></div>
+    <div><input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </div>
+</body>
+
+</html>

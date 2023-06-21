@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Seletctors</title>
+    <style>
+        .container{
+            color: rgb(116, 21, 21);
+            background-color: bisque;
+            border: 2px solid rgb(86, 6, 6);
+            padding: 35px;
+            margin: 15px auto;
+            width: 650px;
+        }
+
+        .btn{
+            background-color: rgb(255, 115, 115);
+            border: 2px solid black;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+            padding: 5px;
+            margin: 4px auto;
+            
+        }
+        /*Some of the Pseudo Selectors */
+        a:hover{
+            background-color: rgb(249, 182, 182);
+        }
+
+        button:hover{
+            background-color: rgb(249, 182, 182);
+        }
+
+        a:active{
+            background-color: rgb(122, 97, 97);
+        }
+
+        button:active{
+            background-color: rgb(122, 97, 97);
+        }
+
+        a:visited{
+            color: rgb(4, 79, 74);
+        }
+
+        button:visited{
+            color: rgb(4, 79, 74);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont">
+        <h3>This is demo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda optio ab eligendi blanditiis
+            doloribus, veritatis consequatur. Cum voluptates sunt animi aspernatur dolore earum, nulla in odit maxime
+            sapiente iste, nisi suscipit dolores nemo mollitia alias, modi est similique. Ab!</p>
+            <a href="https://google.com" class="btn" target="_blank">Read more</a>
+            <button class="btn" id="button">Contact us</button>
+    </div>
+</body>
+
+</html>

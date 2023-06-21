@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form3</title>
+</head>
+<h1>Demo HTML Form</h1>
+
+<body>
+    <form action="backend.php"></form>
+    <div>
+        <label for="name">Name:</label><br>
+        <input type="text" name="myName" id="name"><br>
+    </div><br>
+    <div>
+        <label for="role">Role:</label><br>
+        <input type="text" name="myRole" id="role"><br>
+    </div><br>
+    <div>Gender: <br>
+        <label for="male">Male</label>
+        <input type="radio" name="myGender" id="male">
+
+        <label for="female">Female</label>
+        <input type="radio" name="myGender" id="female">
+
+        <label for="others">Others</label>
+        <input type="radio" name="myGender" id="others">
+    </div><br>
+    <div>
+        <label for="job">Job:</label>
+        <select name="job" id="job">
+            <option value="as">Associate Software Engg</option>
+            <option value="de">Deisgn Engg</option>
+            <option value="dre">Drafting Engg</option>
+            <option value="se">Site Engg</option>
+        </select>
+    </div><br>
+    <div>
+        Write About Your Self:<br> <textarea name="text" cols="30" rows="10"></textarea>
+    </div><br>
+    <div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </div>
+</body>
+</html>

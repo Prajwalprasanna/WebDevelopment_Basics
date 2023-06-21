@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <link rel="stylesheet" href="navigationbar.html">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            font-family:Arial, Helvetica, sans-serif ;
+            border: 1px solid rgb(182, 179, 179);
+            border-radius: 8px ;
+            background-color: rgb(182, 179, 179);
+            color: rgb(88, 86, 86);
+            margin: 10px auto;
+            width: 300px;
+        }
+
+        .forms{
+            padding: 4px;
+        }
+        
+        input{
+            background-color: rgb(182, 179, 179);
+            border: .5px solid rgb(88, 86, 86);
+            border-radius: 4px;
+            padding: 2px auto;
+        }
+
+        .btn{
+            background-color: rgb(88, 86, 86);
+            padding: 7px;
+            border: .5px solid rgb(182, 179, 179);
+            color: rgb(182, 179, 179);
+            border-radius: 4px;
+            width: 90px;
+            font-size: 13px;
+            margin: 7px;
+            padding: 3px 4px;
+        }
+
+        input:hover{
+            background-color: rgb(209, 208, 208);
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(182, 179, 179);
+            border: 1px solid rgb(88, 86, 86);
+            color: rgb(88, 86, 86);
+        }
+
+        button:active{
+            background-color: rgb(209, 208, 208);
+            
+        }
+
+        button:visited{
+            background-color: rgb(238, 168, 227);
+        }
+
+        #submit{
+            float: right;
+        }
+
+        h3, h1{
+            text-align: center; 
+            margin: 10px auto;   
+        }
+    </style>
+</head>
+<h1>Sample form</h1>
+<body>
+    <div class="container" id="cont">
+        <h3>
+            Form by Prajwal
+        </h3>
+        <form action="backend.php"></form>
+        <div id="firstSpan" class="forms">
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <div id="secondSpan" class="forms">
+            <label for="role">Role:</label>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <div id="thiedSpan" class="forms">
+            <label for="bonus">Bonus:</label>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <div id="fourthSpan" class="forms">
+            <button class="btn" id="submit">Submit Now</button>
+            <button class="btn" id="reset">Reset Now</button>
+        </div>
+    </div>
+</body>
+</html>
